@@ -13,6 +13,11 @@ To setup:
         //Include the Stocktwits class
         require_once('stocktwits.php');
 
+        // Instanciate the class
+        $stocktwits = new Stocktwits($consumerKey, $clientSecret, $redirectUri );
+
+        // thats it!
+
 Examples to use from index.php: 
 
         //generate auth url
@@ -26,6 +31,7 @@ Examples to use from index.php:
     		// You can also get another users profile by entering their ID or name, dont forget to turn into an array with decode
   			$stocktwitsprofile = json_decode($stocktwits->getProfile(170), true);
   			$howardsprofile = json_decode($stocktwits->getProfile('howardlindzon'), true);
+        //getting profiles dosent even require authing!
 
   			// getting the authenticated user's streams is as simple as getStream(nameofstream), home is default, 
   			// You will need partner level access, which you can get by applying at http://stocktwits.com/developers/contact
