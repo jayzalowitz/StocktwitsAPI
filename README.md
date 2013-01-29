@@ -4,6 +4,7 @@ StocktwitsAPI
 An api for stocktwits
 
 To setup:
+
         //Include your app information
         $consumerKey = "yourclientkey";
         $clientSecret = "yourclientsecret";
