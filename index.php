@@ -177,7 +177,7 @@ body {
   			// Messages can be sent with message($body, $sentiment = null, $in_reply_to_message_id = null, $chart = null)
   			// this means you only need body to send it, null values must fill in blanks otherwise
 
-  			$body = 'I am testing the stocktwits API! Hi @jayzalowitz';
+  			$body = 'I am testing the stocktwits API! Hi @jayzalowitz @howardlindzon & @stocktwits';
   			$sentiment ="bullish"; // Acceptable values: bullish, bearish, neutral. Defaults to neutral. (Optional)
   			$in_reply_to_message_id ="11743204";
   			$chart = "http://i.imgur.com/vMlZa.gif"; // urls work best here
