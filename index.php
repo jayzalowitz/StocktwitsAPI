@@ -179,7 +179,7 @@ body {
 
   			$body = 'I am testing the stocktwits API! Hi @jayzalowitz @howardlindzon & @stocktwits';
   			$sentiment ="bullish"; // Acceptable values: bullish, bearish, neutral. Defaults to neutral. (Optional)
-  			$in_reply_to_message_id ="11743204";
+  			$in_reply_to_message_id ="17938320";
   			$chart = "http://i.imgur.com/vMlZa.gif"; // urls work best here
   			$message = json_decode($stocktwits->message($body,$sentiment,$in_reply_to_message_id,$chart), true);
 
